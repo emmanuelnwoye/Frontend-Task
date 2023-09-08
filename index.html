@@ -10,10 +10,15 @@
     <div class="container">
         <h1 data-testid="slackUserName">Emmanuel Nwoye</h1>
         <img src="image/DisplayPicture.jpg" alt="Emmanuel Nwoye" data-testid="slackDisplayImage">
-        <p data-testid="currentDayOfTheWeek">Thursday</p>
-        <p data-testid="surrentUTCTime">04:55 PM UTC</p>
+        <p data-testid="currentDayOfTheWeek">Today</p>
+        <div class="clock" data-testid="currentUTCTime">
+            <span id="hour">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span> UTC
+        </div>
         <p data-testid="myTrack">Frontend</p>
+        <div>
         <a href="https://github.com/emmanuelnwoye/Frontend-Task" data-testid="githubURL">GitHub Repository</a>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

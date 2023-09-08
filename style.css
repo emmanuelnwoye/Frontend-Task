@@ -24,6 +24,11 @@ img {
     margin: 20px 0;
 }
 
+.clock {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
 a {
     display: block;
     margin-top: 20px;
