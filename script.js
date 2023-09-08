@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(updateClock, 1);
 
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const currentDate = new Date();
-    const dayIndex = currentDate.getUTCDay();
+    const currentDate = new Date(Date.now() - (11 * 60 * 60 * 1000));
+    const dayIndex = currentDate.getDay();
     const currentDay = daysOfWeek[dayIndex];
     document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = currentDay();
 });
